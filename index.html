@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours and Travel</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Tours & Travel</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Registration</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#" onclick="openContactPopup()">Contact Us</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="destination-image" style="background-image: url('assets/lakshadweep.jpg');">
+                        <div class="destination-content">
+                            <h2>Lakshadweep</h2>
+                            <p>Lakshadweep, the group of 36 islands is known for its exotic and sun-kissed beaches and lush green landscape. The name Lakshadweep in Malayalam and Sanskrit means 'a hundred thousand islands'. India's smallest Union Territory Lakshadweep is an archipelago consisting of 36 islands with an area of 32 sq km.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="destination-image" style="background-image: url('assets/Manali.jpg');">
+                        <div class="destination-content">
+                            <h2>Manali</h2>
+                            <p>Manali is the most beautiful hill station. Here you can enjoy many adventure activities. You can enjoy trekking, climbing, mountain biking, Paragliding, and skiing. There are many places to explore on this beautiful station.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="destination-image" style="background-image: url('assets/golden\ temple.jpg');">
+                        <div class="destination-content">
+                            <h2>Amritsar</h2>
+                            <p>Amritsar boasts of various temples and shrines dedicated to Sikh Culture. Besides offering spiritual salvation, the city is also famous for hospitality, tourism, carpets, handloom fabrics and handicrafts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="destination-image" style="background-image: url('assets/Taj_Mahal.jpeg');">
+                        <div class="destination-content">
+                            <h2>Agra</h2>
+                            <p>Agra is one of the most populous cities in Uttar Pradesh, and the 24th most populous city in India. Agra is a major tourist destination because of its many Mughal-era buildings, most notably the Taj Mahal, Agra Fort and Fatehpur Sikri, all three of which are UNESCO World Heritage Sites.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="destination-image" style="background-image: url('assets/Hawamahal.jpg');">
+                        <div class="destination-content">
+                            <h2>jaipur</h2>
+                            <p>Jaipur is a popular tourist destination in India, forming a part of the west Golden triangle tourist circuit along with Delhi and Agra. The city serves as a gateway to other tourist destinations in Rajasthan and has two World heritage sites of Amer Fort and Jantar Mantar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="destination-image" style="background-image: url('assets/kanyakumari.jpg');">
+                        <div class="destination-content">
+                            <h2>Tamil Nadu</h2>
+                            <p>Tamil Nadu, or land of the Tamils, is the fourth largest state of India and is located in the extreme south of the Indian subcontinent. It is bounded by the Indian Ocean to the east and south, and by the states of Kerala to the west, Karnataka to the northwest, and Andhra Pradesh to the north.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="destination-image" style="background-image: url('assets/Hyderabad.jpg');">
+                        <div class="destination-content">
+                            <h2>Hydrabad</h2>
+                            <p>Discover the wonders of Destination 2. Lorem ipsum dolor sit amet...</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <section class="contact-popup" id="contactPopup">
+            <div class="popup-content">
+                <span class="close" onclick="closeContactPopup()">&times;</span>
+                <h2>Contact Us</h2>
+                <h3>Send your Details</h3> <br>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+    
+                    <button type="button" class="submit-button" onclick="submitContactForm()">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

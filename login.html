@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours and Travel</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="login-body">
+    <header>
+        <div class="header-content">
+            <h1>Tours & Travel</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Registration</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#" onclick="openContactPopup()">Contact Us</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <div class="login-button-container">
+                <button type="button" id="loginButton" onclick="submitLoginForm()">Login</button>
+            </div> 
+        </form>
+    </main>
+</body>
+
+</html>
